@@ -4,9 +4,12 @@
   background-color: #111519;
   align-items: center;
   padding: 0 20px;
-  height: 70px;
+  height: 80px;
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header__logo {
@@ -36,19 +39,22 @@
 
 .search__icon {
   background-color: #febd69;
-  size: 40px;
+  height: 40px !important;
+  width: 35px !important;
   color: black;
+  border-radius: 0px 5px 5px 0px;
 }
 .header__searchbar > input {
   width: 600px;
   height: 40px;
-  border-radius: 10px;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .navbar__options {
@@ -73,4 +79,14 @@
 
 .header__optionBasket {
   margin-left: 20px;
+  display: flex;
+}
+
+.header__basketCount {
+  margin: 0 5px;
+}
+
+.navbar__links {
+  color: #fff;
+  text-decoration: none;
 }
