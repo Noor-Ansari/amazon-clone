@@ -1,18 +1,9 @@
 import React from "react";
 import Product from "../Product/Product";
 import "./Home.css";
-import image1 from "../../assets/image-1.jpg";
-
-const item = {
-  id: 10,
-  title: "Nike sport shoes",
-  image: image1,
-  price: "999.00",
-  rating: 5,
-  desc: "This is dummy data to show at the place of data description",
-};
 
 function Home() {
+  
   return (
     <div className="home">
       <div className="home__container">

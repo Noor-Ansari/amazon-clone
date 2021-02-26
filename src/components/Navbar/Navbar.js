@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import {useDataLayerValues} from "../../DataLayer";
 
 function Navbar() {
-  const [{basket}, dispatch] = useDataLayerValues();
+  const [{basket}] = useDataLayerValues();
   return (
     <div className="header">
       <Link to="/">

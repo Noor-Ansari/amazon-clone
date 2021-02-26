@@ -3,7 +3,7 @@ import "./Product.css";
 import {useDataLayerValues} from "../../DataLayer";
 
 function Product({ id, title, price, rating, image}) {
-    const [{basket}, dispatch] = useDataLayerValues();
+    const [, dispatch] = useDataLayerValues();
     const addToBasket = () => {
         dispatch({
             type : "ADD_TO_BASKET",
