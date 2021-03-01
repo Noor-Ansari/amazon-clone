@@ -2,16 +2,15 @@ import React from "react";
 import "./CheckoutProduct.css";
 import { useDataLayerValues } from "../../DataLayer";
 
+function CheckoutProduct({ id, title, rating, price, image }) {
+  const [, dispatch] = useDataLayerValues();
 
-function CheckoutProduct({id, title, rating, price, image }) {
-    const[, dispatch] = useDataLayerValues();
-
-    const removeItem = () => {
-        dispatch({
-            type : "REMOVE_FROM_BASKET", 
-            id : id
-        })
-    }
+  const removeItem = () => {
+    dispatch({
+      type: "REMOVE_FROM_BASKET",
+      id: id,
+    });
+  };
 
   return (
     <div className="checkoutProduct">
@@ -26,7 +25,9 @@ function CheckoutProduct({id, title, rating, price, image }) {
               <p>⭐</p>
             ))}
         </div>
-        <button onClick={removeItem} className="checkoutProduct__button">Remove from basket</button>
+        <button onClick={removeItem} className="checkoutProduct__button">
+          Remove from basket
+        </button>
       </div>
     </div>
   );

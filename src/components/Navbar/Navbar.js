@@ -4,10 +4,18 @@ import "./Navbar.css";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingCart";
 import { Link } from "react-router-dom";
-import {useDataLayerValues} from "../../DataLayer";
+import { useDataLayerValues } from "../../DataLayer";
+import { auth } from "../../firebase";
 
 function Navbar() {
-  const [{basket}] = useDataLayerValues();
+  const [{ basket, user }] = useDataLayerValues();
+
+  const signOut = () => {
+    if (user) {
+      auth.signOut();
+    }
+  };
+
   return (
     <div className="header">
       <Link to="/">
@@ -27,21 +35,25 @@ function Navbar() {
       </div>
       <img src={flag} alt="flag" className="flag__icon" />
       <div className="navbar">
-        <Link to="/login" className="navbar__links">
-          <div className="navbar__options">
-            <div className="navbar__optionsLineOne">Hello, Sign in</div>
-            <div className="navbar__optionsLineTwo">Accounts & Lists</div>
+        <Link to={!user && "/login"} className="navbar__links">
+          <div className="navbar__options" onClick={signOut}>
+            <div className="navbar__optionsLineOne">
+              Hello, {user ? user.email : "User"}
+            </div>
+            <div className="navbar__optionsLineTwo">
+              {user ? "Sign out" : "Sign in"}
+            </div>
           </div>
         </Link>
 
-        <Link to="/"  className="navbar__links">
+        <Link to="/" className="navbar__links">
           <div className="navbar__options">
             <div className="navbar__optionsLineOne">Returns</div>
             <div className="navbar__optionsLineTwo">& orders</div>
           </div>
         </Link>
 
-        <Link to="/checkout"  className="navbar__links">
+        <Link to="/checkout" className="navbar__links">
           <div className="header__optionBasket">
             <ShoppingBasketIcon />
             <span className="navbar__optionsLineTwo header__basketCount">

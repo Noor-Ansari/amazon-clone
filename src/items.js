@@ -11,103 +11,113 @@ import image10 from "./assets/image-10.jpg";
 import image11 from "./assets/image-11.jpg";
 import image12 from "./assets/image-12.jpg";
 
-
 const Items = [
-    {
+  {
     id: 0,
     title: "Sport shoes for men",
     image: image1,
     price: "799.00",
-    rating: "3",
-    desc: "This is dummy data to show at the place of data description"},
-    
-    {
+    rating: 5,
+    desc: "This is dummy data to show at the place of data description",
+  },
+
+  {
     id: 1,
     title: "Wireless headphones",
     image: image2,
     price: "999.00",
-    rating: "3",
-    desc: "This is dummy data to show at the place of data description"},
-   
-    {
+    rating: 5,
+    desc: "This is dummy data to show at the place of data description",
+  },
+
+  {
     id: 2,
     title: "Digital camera | Waterproof",
     image: image3,
     price: "2799.00",
-    rating: "3",
-    desc: "This is dummy data to show at the place of data description"},
-    
-    {
+    rating: 4,
+    desc: "This is dummy data to show at the place of data description",
+  },
+
+  {
     id: 3,
     title: "Sneakers | Dailywear",
     image: image4,
     price: "699.00",
-    rating: "3",
-    desc: "This is dummy data to show at the place of data description"},
-    
-    {
+    rating: 5,
+    desc: "This is dummy data to show at the place of data description",
+  },
+
+  {
     id: 4,
     title: "Sneakers",
     image: image5,
     price: "899.00",
-    rating: "3",
-    desc: "This is dummy data to show at the place of data description"},
-   
-    {
+    rating: 3,
+    desc: "This is dummy data to show at the place of data description",
+  },
+
+  {
     id: 5,
     title: "Sports bicycle",
     image: image6,
-    rating: "3",
-    desc: "This is dummy data to show at the place of data description"},
-    {
+    price: "699.00",
+    rating: 5,
+    desc: "This is dummy data to show at the place of data description",
+  },
+  {
     id: 6,
     title: "T-shirt for women",
     image: image7,
     price: "699.00",
-    rating: "3",
-    desc: "This is dummy data to show at the place of data description"},
-    
-    {
+    rating: 4,
+    desc: "This is dummy data to show at the place of data description",
+  },
+
+  {
     id: 7,
     title: "Canon | DSLR camera",
     image: image8,
     price: "29999.00",
-    rating: "3",
-    desc: "This is dummy data to show at the place of data description"},
-    
-    {
+    rating: 5,
+    desc: "This is dummy data to show at the place of data description",
+  },
+
+  {
     id: 8,
     title: "Royal perfume",
     image: image9,
     price: "1799.00",
-    rating: "3",
-    desc: "This is dummy data to show at the place of data description"},
-    
-    {
+    rating: 4,
+    desc: "This is dummy data to show at the place of data description",
+  },
+
+  {
     id: 9,
     title: "Black school bag",
     image: image10,
     price: "1999.00",
-    rating: "3",
-    desc: "This is dummy data to show at the place of data description"},
-    
-    {
+    rating: 5,
+    desc: "This is dummy data to show at the place of data description",
+  },
+
+  {
     id: 10,
     title: "Nike sport shoes",
     image: image11,
     price: "999.00",
-    rating: "3",
-    desc: "This is dummy data to show at the place of data description"},
-    
-    {
+    rating: 4,
+    desc: "This is dummy data to show at the place of data description",
+  },
+
+  {
     id: 11,
     title: "wireless keyboard",
     image: image12,
     price: "2499.00",
-    rating: "3",
-    desc: "This is dummy data to show at the place of data description"}]
+    rating: 3,
+    desc: "This is dummy data to show at the place of data description",
+  },
+];
 
-
-
-    
 export default Items;
