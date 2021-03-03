@@ -35,6 +35,7 @@ function Navbar() {
       </div>
       <img src={flag} alt="flag" className="flag__icon" />
       <div className="navbar">
+
         <Link to={!user && "/login"} className="navbar__links">
           <div className="navbar__options" onClick={signOut}>
             <div className="navbar__optionsLineOne">
@@ -46,7 +47,7 @@ function Navbar() {
           </div>
         </Link>
 
-        <Link to="/" className="navbar__links">
+        <Link to="/" className="navbar__links special__item">
           <div className="navbar__options">
             <div className="navbar__optionsLineOne">Returns</div>
             <div className="navbar__optionsLineTwo">& orders</div>
